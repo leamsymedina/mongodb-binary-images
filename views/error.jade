@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    title Error Page
+  body
+    a(href="/") Home Page
+    h1= message
+    if error
+      h2= error.status
+      pre= error.stack

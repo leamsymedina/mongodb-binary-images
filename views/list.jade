@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title All saved images
+  body
+    a(href="/") Home Page
+    h1 List of Images Saved in MongoDB:
+    if images.length <= 0
+      p No images saved in MongoDB.
+    else
+      ul
+        each image in images
+          li
+            a(href="images/#{image._id}")= image.title

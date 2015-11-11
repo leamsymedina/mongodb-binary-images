@@ -1,0 +1,8 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    a(href="/images") List of Images
+    h1 Title: #{title}
+    img(src="data:#{image.contentType};base64,#{image.data}", width="450", height="450", title="This image was reduced in the HTML to 450px in height and 450px in width.", alt="Image from server")

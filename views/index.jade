@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title Binary Image in MongoDB
+  body
+    form(method="post", action="/", enctype="multipart/form-data")
+      a(href="/images") Saved Images
+      h1 Save an Image
+      p
+        input(type="text", name="title", placeholder="Image Title" required)
+      p
+        input(type="file", name="image", accept="image/*" required)
+      p
+        input(type="submit", value="Save Image")
+    if message
+      p= message

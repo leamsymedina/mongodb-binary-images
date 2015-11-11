@@ -1,0 +1,20 @@
+{
+  "name": "mongodb-binary-images",
+  "version": "0.0.1",
+  "description": "A web app that saves images in MongoDB, developed with the Express web framework for the Node.js server.",
+  "main": "app.js",
+  "author": "Leamsy Medina",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leamsymedina/mongodb-binary-images"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.1.10",
+    "morgan": "^1.6.1",
+    "multer": "^1.0.6"
+  }
+}
