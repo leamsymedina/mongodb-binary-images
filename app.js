@@ -21,7 +21,7 @@ var config = require('./config');
 // set the environment variable
 app.set('env', config.env);
 
-// connect to the data base
+// connect to the database
 mongoose.connect(config.database);
 
 // use body parser to get data from post and/or url parameters
